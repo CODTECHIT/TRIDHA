@@ -107,7 +107,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button
-                variant="vihaan-hero"
+                variant="tridha-hero"
                 size="xl"
                 onClick={onOpenContact}
                 className="group"
@@ -116,7 +116,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button
-                variant="vihaan-secondary"
+                variant="tridha-secondary"
                 size="xl"
                 onClick={scrollToServices}
                 className="border-white/30 text-white hover:bg-white hover:text-primary"

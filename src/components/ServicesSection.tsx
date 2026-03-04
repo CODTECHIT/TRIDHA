@@ -111,7 +111,7 @@ export const ServicesSection = ({ onOpenContact }: ServicesSectionProps) => {
 
               {/* CTA */}
               <Button
-                variant="vihaan-secondary"
+                variant="tridha-secondary"
                 className="w-full"
                 onClick={onOpenContact}
               >

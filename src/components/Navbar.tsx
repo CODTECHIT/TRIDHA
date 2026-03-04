@@ -92,7 +92,7 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <Button
-                variant={isTransparent ? "vihaan-secondary" : "vihaan-cta"}
+                variant={isTransparent ? "tridha-secondary" : "tridha-cta"}
                 onClick={() => navigate("/contact")}
                 className={`gap-2 ${isTransparent ? "bg-white/10 text-white border-white/20 hover:bg-white hover:text-primary" : ""}`}
               >
@@ -156,7 +156,7 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
                     className="pt-4"
                   >
                     <Button
-                      variant="vihaan-cta"
+                      variant="tridha-cta"
                       size="lg"
                       className="w-full"
                       onClick={() => {

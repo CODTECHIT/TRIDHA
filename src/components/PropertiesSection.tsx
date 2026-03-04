@@ -208,7 +208,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
                     <p className="text-lg font-bold text-secondary">{solution.startingAt}</p>
                   </div>
                   <Button
-                    variant="vihaan-primary"
+                    variant="tridha-primary"
                     size="sm"
                     onClick={onOpenContact}
                   >
@@ -227,7 +227,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
           transition={{ duration: 0.7, delay: 0.5 }}
           className="text-center mt-12"
         >
-          <Button variant="vihaan-primary" size="lg" onClick={onOpenContact}>
+          <Button variant="tridha-primary" size="lg" onClick={onOpenContact}>
             View Design Portfolio
           </Button>
         </motion.div>
@@ -258,7 +258,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
               className="w-full h-auto object-contain max-h-[600px]"
             />
             <div className="absolute bottom-4 right-4">
-              <Button variant="vihaan-secondary" size="sm" onClick={onOpenContact}>
+              <Button variant="tridha-secondary" size="sm" onClick={onOpenContact}>
                 Book a Site Visit
               </Button>
             </div>

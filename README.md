@@ -1,8 +1,8 @@
-# Vihaan Properties Hub
+# TRIDHA - Premium Interior Solutions
 
 ## Project Info
 
-**URL**: [Vihaan Properties Hub](#)
+**URL**: [TRIDHA Interior Solutions](https://tridhainteriors.com/)
 
 ## Getting Started
 

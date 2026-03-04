@@ -297,7 +297,7 @@ export const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                   {/* Submit */}
                   <Button
                     type="submit"
-                    variant="vihaan-cta"
+                    variant="tridha-cta"
                     size="lg"
                     className="w-full"
                     disabled={isSubmitting}

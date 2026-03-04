@@ -40,7 +40,7 @@ export const CTASection = ({ onOpenContact }: CTASectionProps) => {
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             <Button
-              variant="vihaan-cta"
+              variant="tridha-cta"
               size="xl"
               onClick={onOpenContact}
               className="pulse-gold group"

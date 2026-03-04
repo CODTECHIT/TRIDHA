@@ -30,7 +30,7 @@ const contactMethods = [
     description: "Quick response on WhatsApp",
     content: "+91 98798 77671",
     cta: "Message on WhatsApp",
-    action: "https://wa.me/919879877671?text=Hi%20Manoj%20Kumar,%20I%20am%20interested%20in%20interior%20solutions",
+    action: "https://wa.me/919879877671?text=Hi%20TRIDHA%20Team,%20I%20am%20interested%20in%20interior%20solutions",
     color: "text-[#25D366]",
   },
   {
@@ -198,7 +198,7 @@ const Contact = () => {
                 <p className="text-sm text-foreground-muted mb-4">{method.description}</p>
                 <p className="text-secondary font-semibold mb-6">{method.content}</p>
                 <Button
-                  variant="vihaan-primary"
+                  variant="tridha-primary"
                   className="w-full mt-auto"
                   asChild
                 >
@@ -304,7 +304,7 @@ const Contact = () => {
 
                   <Button
                     type="submit"
-                    variant="vihaan-cta"
+                    variant="tridha-cta"
                     size="lg"
                     className="w-full"
                     disabled={isSubmitting}
@@ -411,7 +411,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <Button variant="vihaan-primary" className="w-full" asChild>
+                <Button variant="tridha-primary" className="w-full" asChild>
                   <a
                     href="https://maps.google.com/?q=AVR+AVNR+Residency+Secretariate+Colony+Gachibowli"
                     target="_blank"

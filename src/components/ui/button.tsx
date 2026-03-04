@@ -15,11 +15,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Vihaan Properties custom variants
-        "vihaan-primary": "bg-secondary text-secondary-foreground shadow-[0_2px_8px_rgba(0,132,214,0.15)] hover:bg-primary hover:shadow-[0_8px_24px_rgba(0,84,214,0.3)] active:scale-[0.98]",
-        "vihaan-secondary": "bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground",
-        "vihaan-cta": "bg-gold text-primary font-bold shadow-[0_4px_12px_rgba(212,175,55,0.2)] hover:bg-gold-bright hover:shadow-[0_12px_32px_rgba(212,175,55,0.4)]",
-        "vihaan-hero": "bg-secondary text-secondary-foreground shadow-[0_2px_8px_rgba(0,132,214,0.15)] hover:bg-primary hover:shadow-[0_8px_24px_rgba(0,84,214,0.3)] text-lg",
+        // TRIDHA custom variants
+        "tridha-primary": "bg-secondary text-secondary-foreground shadow-[0_2px_8px_rgba(0,132,214,0.15)] hover:bg-primary hover:shadow-[0_8px_24px_rgba(0,84,214,0.3)] active:scale-[0.98]",
+        "tridha-secondary": "bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground",
+        "tridha-cta": "bg-gold text-primary font-bold shadow-[0_4px_12px_rgba(212,175,55,0.2)] hover:bg-gold-bright hover:shadow-[0_12px_32px_rgba(212,175,55,0.4)]",
+        "tridha-hero": "bg-secondary text-secondary-foreground shadow-[0_2px_8px_rgba(0,132,214,0.15)] hover:bg-primary hover:shadow-[0_8px_24px_rgba(0,84,214,0.3)] text-lg",
       },
       size: {
         default: "h-11 px-8 py-3",
@@ -38,7 +38,7 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 
