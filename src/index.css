@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vihaan Properties Design System
+   Premium Real Estate Advisory
+   Colors in HSL format
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --primary-dark: 200 100% 18%;
+    /* #003D5B - Trust, stability */
+    --primary-bright: 202 100% 42%;
+    /* #0084D6 - Growth, action */
+    --gold: 43 64% 52%;
+    /* #D4AF37 - Premium, wealth */
+    --gold-bright: 45 100% 50%;
+    /* #FFC107 - Hover state */
+
+    /* Neutral Colors */
+    --background: 0 0% 100%;
+    /* #FFFFFF */
+    --background-alt: 210 20% 98%;
+    /* #F8F9FA */
+    --foreground: 0 0% 10%;
+    /* #1A1A1A */
+    --foreground-muted: 220 9% 46%;
+    /* #6B7280 */
+
+    /* Semantic Tokens */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 200 100% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 202 100% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 98%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 43 64% 52%;
+    --accent-foreground: 200 100% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 202 100% 42%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(200 100% 18%) 0%, hsl(202 100% 42%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(200 100% 18%) 0%, hsl(202 100% 42%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 61, 91, 0.1);
+    --shadow-lg: 0 16px 48px rgba(0, 61, 91, 0.15);
+    --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+    --shadow-gold: 0 4px 12px rgba(212, 175, 55, 0.2);
+    --shadow-gold-lg: 0 12px 32px rgba(212, 175, 55, 0.4);
+    --shadow-blue: 0 2px 8px rgba(0, 132, 214, 0.15);
+    --shadow-blue-lg: 0 8px 24px rgba(0, 132, 214, 0.3);
+
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 200 100% 18%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 98%;
+    --sidebar-accent-foreground: 200 100% 18%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 202 100% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+    color: hsl(var(--primary-dark));
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-[56px] leading-tight;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-[40px] leading-tight;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl lg:text-[28px];
+  }
+
+  h4 {
+    @apply text-lg md:text-xl;
+  }
+}
+
+@layer components {
+
+  /* Navigation link with gold underline animation */
+  .nav-link {
+    @apply relative text-foreground font-medium transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-[3px] scale-x-0 origin-right transition-transform duration-300;
+    background-color: hsl(var(--gold));
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply scale-x-100 origin-left;
+  }
+
+  /* Service card with elevation effect */
+  .service-card {
+    @apply bg-card rounded-xl p-8 md:p-10 border border-border transition-all duration-400;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .service-card:hover {
+    @apply -translate-y-2;
+    box-shadow: var(--shadow-lg);
+    border-color: hsl(var(--gold));
+  }
+
+  /* Property card */
+  .property-card {
+    @apply bg-card rounded-xl overflow-hidden transition-all duration-500;
+    box-shadow: var(--shadow-md);
+  }
+
+  .property-card:hover {
+    box-shadow: 0 20px 60px rgba(0, 132, 214, 0.2);
+  }
+
+  .property-card:hover .property-image {
+    @apply scale-105;
+  }
+
+  /* Testimonial card */
+  .testimonial-card {
+    @apply bg-muted rounded-lg p-8 border-l-4;
+    border-left-color: hsl(var(--gold));
+  }
+
+  /* Stats counter */
+  .stat-card {
+    @apply bg-card rounded-xl p-6 text-center;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .stat-number {
+    @apply text-3xl md:text-4xl font-bold;
+    color: hsl(var(--secondary));
+  }
+
+  /* Form input styling */
+  .form-input {
+    @apply w-full px-4 py-3 rounded-lg border border-border bg-muted text-foreground transition-all duration-200;
+  }
+
+  .form-input:focus {
+    @apply outline-none border-secondary;
+    box-shadow: 0 0 0 3px rgba(0, 132, 214, 0.1);
+  }
+
+  /* Pulse animation for CTA */
+  .pulse-gold {
+    animation: pulseGold 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGold {
+
+    0%,
+    100% {
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+    }
+
+    50% {
+      box-shadow: 0 8px 32px rgba(212, 175, 55, 0.5);
+    }
+  }
+
+  /* Float animation */
+  .float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  /* Floating button pulse */
+  .floating-pulse {
+    animation: floatingPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes floatingPulse {
+
+    0%,
+    100% {
+      box-shadow: 0 4px 12px rgba(0, 132, 214, 0.3);
+      transform: scale(1);
+    }
+
+    50% {
+      box-shadow: 0 8px 24px rgba(0, 132, 214, 0.5);
+      transform: scale(1.05);
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+
+  .duration-400 {
+    transition-duration: 400ms;
+  }
+
+  .duration-600 {
+    transition-duration: 600ms;
+  }
+}
