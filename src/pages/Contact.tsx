@@ -30,7 +30,7 @@ const contactMethods = [
     description: "Quick response on WhatsApp",
     content: "+91 98798 77671",
     cta: "Message on WhatsApp",
-    action: "https://wa.me/919879877671?text=Hi%20TRIDHA%20Team,%20I%20am%20interested%20in%20interior%20solutions",
+    action: "https://wa.me/919879877671?text=Hi%20THRIDHA%20Team,%20I%20am%20interested%20in%20interior%20solutions",
     color: "text-[#25D366]",
   },
   {
@@ -105,7 +105,7 @@ const Contact = () => {
 
     // Construct WhatsApp message
     const whatsappNumber = "919879877671";
-    const message = `*Quick Quote Request - TRIDHA Interior Solutions*%0A%0A` +
+    const message = `*Quick Quote Request - THRIDHA Interior Solutions*%0A%0A` +
       `*Name:* ${fullName}%0A` +
       `*Phone:* ${phone}%0A` +
       `*Email:* ${email}%0A` +
@@ -157,7 +157,7 @@ const Contact = () => {
             className="text-center max-w-3xl mx-auto text-white"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              Consult with <span className="text-gold">TRIDHA Interior</span>
+              Consult with <span className="text-gold">THRIDHA Interior</span>
             </h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -198,7 +198,7 @@ const Contact = () => {
                 <p className="text-sm text-foreground-muted mb-4">{method.description}</p>
                 <p className="text-secondary font-semibold mb-6">{method.content}</p>
                 <Button
-                  variant="tridha-primary"
+                  variant="THRIDHA-primary"
                   className="w-full mt-auto"
                   asChild
                 >
@@ -304,7 +304,7 @@ const Contact = () => {
 
                   <Button
                     type="submit"
-                    variant="tridha-cta"
+                    variant="THRIDHA-cta"
                     size="lg"
                     className="w-full"
                     disabled={isSubmitting}
@@ -379,7 +379,7 @@ const Contact = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="TRIDHA Interior Office Location"
+                title="THRIDHA Interior Office Location"
               />
             </div>
 
@@ -411,7 +411,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <Button variant="tridha-primary" className="w-full" asChild>
+                <Button variant="THRIDHA-primary" className="w-full" asChild>
                   <a
                     href="https://maps.google.com/?q=AVR+AVNR+Residency+Secretariate+Colony+Gachibowli"
                     target="_blank"

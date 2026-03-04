@@ -155,12 +155,12 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
                   src={solution.image}
                   alt={
                     solution.title === "Modular Kitchen"
-                      ? "Modern modular kitchen design in Hyderabad by TRIDHA Interior Designers"
+                      ? "Modern modular kitchen design in Hyderabad by THRIDHA Interior Designers"
                       : solution.title === "Wardrobes"
                         ? "Custom wardrobe design for bedroom in Hyderabad apartment"
                         : solution.title === "TV Units"
                           ? "Luxury living room interior design in Gachibowli Hyderabad"
-                          : `${solution.title} design in Hyderabad by TRIDHA Interior Solutions`
+                          : `${solution.title} design in Hyderabad by THRIDHA Interior Solutions`
                   }
                   className="w-full h-full object-cover transition-transform duration-600 ease-out group-hover:scale-[1.08]"
                 />
@@ -208,7 +208,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
                     <p className="text-lg font-bold text-secondary">{solution.startingAt}</p>
                   </div>
                   <Button
-                    variant="tridha-primary"
+                    variant="THRIDHA-primary"
                     size="sm"
                     onClick={onOpenContact}
                   >
@@ -227,7 +227,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
           transition={{ duration: 0.7, delay: 0.5 }}
           className="text-center mt-12"
         >
-          <Button variant="tridha-primary" size="lg" onClick={onOpenContact}>
+          <Button variant="THRIDHA-primary" size="lg" onClick={onOpenContact}>
             View Design Portfolio
           </Button>
         </motion.div>
@@ -258,7 +258,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
               className="w-full h-auto object-contain max-h-[600px]"
             />
             <div className="absolute bottom-4 right-4">
-              <Button variant="tridha-secondary" size="sm" onClick={onOpenContact}>
+              <Button variant="THRIDHA-secondary" size="sm" onClick={onOpenContact}>
                 Book a Site Visit
               </Button>
             </div>

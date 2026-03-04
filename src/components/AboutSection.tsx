@@ -56,9 +56,9 @@ export const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl font-bold mb-6 text-primary">About TRIDHA</h2>
+            <h2 className="text-3xl font-bold mb-6 text-primary">About THRIDHA</h2>
             <p className="text-foreground-muted leading-relaxed mb-6">
-              TRIDHA Interior Solutions is a professional interior design company founded by D. Manoj Kumar Varma,
+              THRIDHA Interior Solutions is a professional interior design company founded by D. Manoj Kumar Varma,
               specializing in residential and commercial interior projects.
             </p>
             <p className="text-foreground-muted leading-relaxed">
@@ -78,7 +78,7 @@ export const AboutSection = () => {
             <div className="relative w-full max-w-sm aspect-square flex items-center justify-center">
               <img
                 src="/logo.png"
-                alt="TRIDHA Logo"
+                alt="THRIDHA Logo"
                 className="w-full h-full object-contain"
               />
             </div>
@@ -100,7 +100,7 @@ export const AboutSection = () => {
               <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
               <img
                 src={residentialInterior}
-                alt="TRIDHA Interior Design Excellence"
+                alt="THRIDHA Interior Design Excellence"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent text-white">

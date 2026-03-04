@@ -1,8 +1,8 @@
-# TRIDHA - Premium Interior Solutions
+# THRIDHA - Premium Interior Solutions
 
 ## Project Info
 
-**URL**: [TRIDHA Interior Solutions](https://tridhainteriors.com/)
+**URL**: [THRIDHA Interior Solutions](https://THRIDHAinteriors.com/)
 
 ## Getting Started
 

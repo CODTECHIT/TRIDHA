@@ -61,13 +61,13 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
               <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center overflow-hidden p-0.5">
                 <img
                   src="/logo.png"
-                  alt="TRIDHA Logo"
+                  alt="THRIDHA Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex flex-col text-left">
                 <span className={`font-bold text-xl leading-none transition-colors ${isTransparent ? "text-white" : "text-primary"}`} style={{ fontFamily: "'Cinzel', serif" }}>
-                  TRIDHA
+                  THRIDHA
                 </span>
                 <span className={`text-[10px] font-medium tracking-[0.15em] uppercase leading-none mt-1.5 transition-colors ${isTransparent ? "text-white/70" : "text-primary/70"}`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   Architects | Interior Designers
@@ -92,7 +92,7 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <Button
-                variant={isTransparent ? "tridha-secondary" : "tridha-cta"}
+                variant={isTransparent ? "THRIDHA-secondary" : "THRIDHA-cta"}
                 onClick={() => navigate("/contact")}
                 className={`gap-2 ${isTransparent ? "bg-white/10 text-white border-white/20 hover:bg-white hover:text-primary" : ""}`}
               >
@@ -156,7 +156,7 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
                     className="pt-4"
                   >
                     <Button
-                      variant="tridha-cta"
+                      variant="THRIDHA-cta"
                       size="lg"
                       className="w-full"
                       onClick={() => {

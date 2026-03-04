@@ -6,7 +6,7 @@ import { ChevronDown, MessageCircleQuestion } from "lucide-react";
 const faqs = [
     {
         question: "Who are the best interior designers in Hyderabad?",
-        answer: "TRIDHA Interior Solutions is a Hyderabad-based interior design company offering residential and commercial interior design services including modular kitchens, wardrobes, false ceilings, and turnkey interiors.",
+        answer: "THRIDHA Interior Solutions is a Hyderabad-based interior design company offering residential and commercial interior design services including modular kitchens, wardrobes, false ceilings, and turnkey interiors.",
     },
     {
         question: "How much does interior design cost in Hyderabad?",
@@ -14,7 +14,7 @@ const faqs = [
     },
     {
         question: "Do you provide turnkey interior solutions?",
-        answer: "Yes, TRIDHA provides end-to-end turnkey interior services including design, materials, execution, and final delivery.",
+        answer: "Yes, THRIDHA provides end-to-end turnkey interior services including design, materials, execution, and final delivery.",
     },
     {
         question: "Do you design modular kitchens?",

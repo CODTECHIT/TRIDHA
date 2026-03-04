@@ -56,7 +56,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white"
             >
-              Interior Designers in Hyderabad – <span className="text-gold">TRIDHA</span> Interior Solutions
+              Interior Designers in Hyderabad – <span className="text-gold">THRIDHA</span> Interior Solutions
             </motion.h1>
 
             {/* Subheadline */}
@@ -96,7 +96,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               transition={{ duration: 0.7, delay: 0.6 }}
               className="text-lg text-white/80 mb-8 max-w-xl"
             >
-              TRIDHA Interior Solutions provides premium residential and office interior design services in Hyderabad. Experts in modular kitchens, wardrobes, false ceilings, and turnkey interior solutions.
+              THRIDHA Interior Solutions provides premium residential and office interior design services in Hyderabad. Experts in modular kitchens, wardrobes, false ceilings, and turnkey interior solutions.
             </motion.p>
 
             {/* CTAs */}
@@ -107,7 +107,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button
-                variant="tridha-hero"
+                variant="THRIDHA-hero"
                 size="xl"
                 onClick={onOpenContact}
                 className="group"
@@ -116,7 +116,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button
-                variant="tridha-secondary"
+                variant="THRIDHA-secondary"
                 size="xl"
                 onClick={scrollToServices}
                 className="border-white/30 text-white hover:bg-white hover:text-primary"
@@ -138,7 +138,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
                 <div className="h-40 overflow-hidden">
                   <img
                     src={kitchenImage}
-                    alt="Modern modular kitchen design in Hyderabad by TRIDHA Interior Designers"
+                    alt="Modern modular kitchen design in Hyderabad by THRIDHA Interior Designers"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -160,7 +160,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
                 <div className="h-32 overflow-hidden">
                   <img
                     src={officeInteriorImage}
-                    alt="Commercial office interior design in Hyderabad by TRIDHA"
+                    alt="Commercial office interior design in Hyderabad by THRIDHA"
                     className="w-full h-full object-cover"
                   />
                 </div>

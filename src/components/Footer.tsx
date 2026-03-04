@@ -23,13 +23,13 @@ export const Footer = () => {
               <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center overflow-hidden p-1">
                 <img
                   src="/logo.png"
-                  alt="TRIDHA Logo"
+                  alt="THRIDHA Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex flex-col text-left">
                 <span className="font-bold text-xl leading-none text-white" style={{ fontFamily: "'Cinzel', serif" }}>
-                  TRIDHA
+                  THRIDHA
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.15em] uppercase leading-none mt-1.5 text-white/70" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   Architects | Interior Designers
@@ -132,7 +132,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © {currentYear} TRIDHA Interior Solutions. All rights reserved.
+            © {currentYear} THRIDHA Interior Solutions. All rights reserved.
           </p>
           <div className="flex gap-6">
             <button onClick={() => handleNavigation("/privacy")} className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">

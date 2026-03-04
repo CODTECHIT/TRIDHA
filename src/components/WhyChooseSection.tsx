@@ -95,10 +95,10 @@ export const WhyChooseSection = () => {
               transition={{ duration: 0.7 }}
             >
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Why Choose TRIDHA Interior Designers
+                Why Choose THRIDHA Interior Designers
               </h2>
               <p className="text-lg text-foreground-muted mb-10">
-                TRIDHA provides premium residential and office interior design services in Hyderabad. We combine aesthetics with functionality to create spaces that inspire.
+                THRIDHA provides premium residential and office interior design services in Hyderabad. We combine aesthetics with functionality to create spaces that inspire.
               </p>
             </motion.div>
 

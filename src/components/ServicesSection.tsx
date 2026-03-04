@@ -86,7 +86,7 @@ export const ServicesSection = ({ onOpenContact }: ServicesSectionProps) => {
                 <div className="absolute inset-0 overflow-hidden">
                   <img
                     src={service.image}
-                    alt={`${service.title} in Hyderabad by TRIDHA Architects & Interior Designers`}
+                    alt={`${service.title} in Hyderabad by THRIDHA Architects & Interior Designers`}
                     className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.12] group-hover:-translate-y-4"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
@@ -111,7 +111,7 @@ export const ServicesSection = ({ onOpenContact }: ServicesSectionProps) => {
 
               {/* CTA */}
               <Button
-                variant="tridha-secondary"
+                variant="THRIDHA-secondary"
                 className="w-full"
                 onClick={onOpenContact}
               >

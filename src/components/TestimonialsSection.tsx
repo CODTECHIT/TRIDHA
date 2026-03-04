@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Tridha Interior transformed our 3BHK into a dream home. Manoj and his team and highly professional and delivered the project exactly on time.",
+    quote: "THRIDHA Interior transformed our 3BHK into a dream home. Manoj and his team and highly professional and delivered the project exactly on time.",
     author: "Anitha Reddy",
     title: "Homeowner, Gachibowli",
     rating: 5,
@@ -17,7 +17,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "We hired Tridha for our office renovation. Their space planning and 3D visualization helped us see the final look before even starting. Highly efficient work.",
+    quote: "We hired THRIDHA for our office renovation. Their space planning and 3D visualization helped us see the final look before even starting. Highly efficient work.",
     author: "Kiran Kumar",
     title: "CEO, Tech Solutions",
     rating: 5,
@@ -48,7 +48,7 @@ export const TestimonialsSection = () => {
             Client Testimonials
           </h2>
           <p className="text-lg text-foreground-muted">
-            Satisfied homeowners and business owners in Hyderabad who chose TRIDHA for their interior journey.
+            Satisfied homeowners and business owners in Hyderabad who chose THRIDHA for their interior journey.
           </p>
         </motion.div>
 

@@ -86,7 +86,7 @@ export const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
 
     // Construct WhatsApp message
     const whatsappNumber = "919879877671";
-    const message = `*New Inquiry for TRIDHA Interior Solutions*%0A%0A` +
+    const message = `*New Inquiry for THRIDHA Interior Solutions*%0A%0A` +
       `*Name:* ${formData.fullName}%0A` +
       `*Phone:* ${formData.phone}%0A` +
       `*Email:* ${formData.email}%0A` +
@@ -297,7 +297,7 @@ export const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                   {/* Submit */}
                   <Button
                     type="submit"
-                    variant="tridha-cta"
+                    variant="THRIDHA-cta"
                     size="lg"
                     className="w-full"
                     disabled={isSubmitting}
