@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Quote } from "lucide-react";
+import residentialInterior from "@/assets/residential-interior.png";
 
 const stats = [
   { number: 10, suffix: "+", label: "Years Experience" },
@@ -98,7 +99,7 @@ export const AboutSection = () => {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl group">
               <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
               <img
-                src="/src/assets/residential-interior.png"
+                src={residentialInterior}
                 alt="TRIDHA Interior Design Excellence"
                 className="w-full h-full object-cover"
               />
