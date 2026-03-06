@@ -58,7 +58,7 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <button onClick={() => navigate("/")} className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center overflow-hidden p-0.5">
+              <div className="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center overflow-hidden p-0.5">
                 <img
                   src="/logo.png"
                   alt="THRIDHA Logo"
