@@ -43,7 +43,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 lg:mb-6 text-white"
+              className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 lg:mb-6 text-white"
             >
               Interior Designers in Hyderabad – <span className="text-gold">THRIDHA</span> Interior Solutions
             </motion.h1>
@@ -53,27 +53,27 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-              className="mb-8 w-full"
+              className="mb-6 lg:mb-8 w-full"
             >
-              <p className="text-lg md:text-2xl font-medium mb-4 text-white/90">
+              <p className="text-base sm:text-lg md:text-2xl font-semibold mb-3 text-white/90">
                 Premium Interior Design & Turnkey Solutions for Homes and Offices.
               </p>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-3 mt-6 text-left">
+              <div className="grid grid-cols-2 gap-x-3 gap-y-2 mt-4 text-left">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
-                  <span className="text-xs lg:text-sm font-medium">10+ Years Experience</span>
+                  <CheckCircle className="w-3.5 h-3.5 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-[11px] sm:text-xs lg:text-sm font-medium">10+ Years Experience</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
-                  <span className="text-xs lg:text-sm font-medium">150+ Projects Completed</span>
+                  <CheckCircle className="w-3.5 h-3.5 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-[11px] sm:text-xs lg:text-sm font-medium">150+ Projects Completed</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
-                  <span className="text-xs lg:text-sm font-medium">Hyderabad Based</span>
+                  <CheckCircle className="w-3.5 h-3.5 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-[11px] sm:text-xs lg:text-sm font-medium">Hyderabad Based</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
-                  <span className="text-xs lg:text-sm font-medium">Turnkey Solutions</span>
+                  <CheckCircle className="w-3.5 h-3.5 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-[11px] sm:text-xs lg:text-sm font-medium">Turnkey Solutions</span>
                 </div>
               </div>
             </motion.div>
@@ -83,7 +83,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-              className="text-base lg:text-lg text-white/80 mb-8 max-w-xl"
+              className="text-sm sm:text-base lg:text-lg text-white/80 mb-6 lg:mb-8 max-w-xl"
             >
               THRIDHA Interior Solutions provides premium residential and office interior design services in Hyderabad. Experts in modular kitchens, wardrobes, false ceilings, and turnkey interior solutions.
             </motion.p>
@@ -93,11 +93,11 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 mb-20 md:mb-0"
             >
               <Button
                 variant="THRIDHA-hero"
-                size="xl"
+                size="lg"
                 onClick={onOpenContact}
                 className="group"
               >
@@ -106,7 +106,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
               </Button>
               <Button
                 variant="THRIDHA-secondary"
-                size="xl"
+                size="lg"
                 onClick={scrollToServices}
                 className="border-white/30 text-white hover:bg-white hover:text-primary"
               >
