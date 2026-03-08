@@ -26,10 +26,15 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      // Use multiple scroll position sources for robustness
+      const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+      setIsScrolled(scrollPos > 40);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Initialize state on mount to prevent flicker if page is already scrolled
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -49,7 +54,7 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-300 ${!isTransparent
+        className={`fixed top-0 left-0 right-0 z-[999] transition-[background-color,backdrop-filter,box-shadow,height] duration-300 ${!isTransparent
           ? "bg-background/95 backdrop-blur-md shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
           : "bg-transparent"
           }`}

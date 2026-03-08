@@ -87,75 +87,63 @@ export const AboutSection = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image */}
-          {/* Feature Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.9, ease: "easeOut" }}
-            className="relative"
-          >
-            <div className="relative aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-xl group">
-              <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
-              <img
-                src={residentialInterior}
-                alt="THRIDHA Interior Design Excellence"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent text-white">
-                <p className="text-gold text-[10px] lg:text-sm font-bold uppercase tracking-widest mb-1 drop-shadow-md">Founder</p>
-                <h3 className="text-xl lg:text-3xl font-extrabold text-white drop-shadow-lg">
-                  D. Manoj Kumar Varma
-                </h3>
-              </div>
-            </div>
-            {/* Decorative elements */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold/20 rounded-2xl -z-10" />
-            <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-gold rounded-2xl -z-10" />
-          </motion.div>
-
+        <div className="max-w-4xl mx-auto">
           {/* Content */}
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 40 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8">
               Expertise Driven by Passion & Experience
             </h2>
 
+            {/* Founder Bio - Featured Quote/Intro */}
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-12 group">
+              <div className="relative shrink-0">
+                <div className="absolute -inset-1 bg-gradient-to-tr from-gold to-primary/20 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
+                <img
+                  src="/image/founder.jpeg"
+                  alt="D. Manoj Kumar Varma"
+                  className="relative w-32 h-32 rounded-2xl object-cover shadow-md border border-white/50"
+                />
+              </div>
+              <div className="flex-grow">
+                <div className="inline-block px-3 py-1 bg-gold/10 text-gold rounded-full text-[10px] font-bold uppercase tracking-widest mb-2">
+                  Visionary Founder
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-3">D. Manoj Kumar Varma</h3>
+                <p className="text-foreground-muted leading-relaxed text-sm lg:text-base">
+                  With over a decade of expertise, Manoj has transformed hundreds of spaces into
+                  exquisite environments. His philosophy blends technical precision with
+                  artisanal design, ensuring every project is both unique and timeless.
+                </p>
+              </div>
+            </div>
+
             {/* Quote */}
-            <div className="relative bg-secondary/10 rounded-xl p-6 mb-8">
-              <Quote className="absolute top-4 left-4 w-8 h-8 text-gold/30" />
-              <p className="text-lg italic text-foreground pl-8">
+            <div className="relative bg-secondary/5 rounded-2xl p-6 mb-8 border-l-4 border-gold">
+              <Quote className="absolute top-4 right-4 w-6 h-6 text-gold/20" />
+              <p className="text-lg italic text-primary/80 font-medium">
                 "We don't just design rooms, we build environments where memories are made."
               </p>
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                  className="stat-card"
+                  className="stat-card border border-border/40 hover:border-gold/30 transition-colors"
                 >
                   <CountUp target={stat.number} suffix={stat.suffix} />
                   <p className="text-sm text-foreground-muted mt-1">{stat.label}</p>
                 </motion.div>
               ))}
             </div>
-
-            {/* Bio */}
-            <p className="text-foreground-muted leading-relaxed">
-              D. Manoj Kumar Varma is a visionary in the interior design space. With a focus on
-              turnkey solutions, he has transformed hundreds of homes and offices into premium,
-              modern spaces. Our approach combines technical space planning with artisanal furniture
-              and decor design, ensuring every project is unique and timeless.
-            </p>
           </motion.div>
         </div>
       </div>

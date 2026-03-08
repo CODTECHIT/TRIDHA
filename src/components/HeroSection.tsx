@@ -21,7 +21,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col pt-20 overflow-hidden"
+      className="relative min-h-screen flex flex-col pt-20 overflow-hidden bg-primary"
     >
       {/* Background Image */}
       <div
