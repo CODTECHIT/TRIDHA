@@ -47,9 +47,9 @@ export const AboutSection = () => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 lg:py-32 bg-muted">
-      <div className="container mx-auto px-4 lg:px-20 mb-20 lg:mb-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center bg-white p-8 lg:p-12 rounded-2xl shadow-sm border border-border">
+    <section id="about" ref={sectionRef} className="py-16 lg:py-24 bg-muted">
+      <div className="container mx-auto px-4 lg:px-20 mb-12 lg:mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-white p-6 lg:p-12 rounded-2xl shadow-sm border border-border">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -96,16 +96,16 @@ export const AboutSection = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="relative"
           >
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl group">
+            <div className="relative aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-xl group">
               <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
               <img
                 src={residentialInterior}
                 alt="THRIDHA Interior Design Excellence"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent text-white">
-                <p className="text-gold text-sm font-bold uppercase tracking-widest mb-1 drop-shadow-md">Founder</p>
-                <h3 className="text-2xl lg:text-3xl font-extrabold text-white drop-shadow-lg">
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent text-white">
+                <p className="text-gold text-[10px] lg:text-sm font-bold uppercase tracking-widest mb-1 drop-shadow-md">Founder</p>
+                <h3 className="text-xl lg:text-3xl font-extrabold text-white drop-shadow-lg">
                   D. Manoj Kumar Varma
                 </h3>
               </div>

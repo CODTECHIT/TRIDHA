@@ -12,7 +12,7 @@ export const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 lg:px-20 py-16">
+      <div className="container mx-auto px-4 lg:px-20 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
@@ -28,10 +28,10 @@ export const Footer = () => {
                 />
               </div>
               <div className="flex flex-col text-left">
-                <span className="font-bold text-xl leading-none text-white" style={{ fontFamily: "'Cinzel', serif" }}>
+                <span className="font-bold text-2xl leading-none text-white" style={{ fontFamily: "'Cinzel', serif" }}>
                   THRIDHA
                 </span>
-                <span className="text-[10px] font-medium tracking-[0.15em] uppercase leading-none mt-1.5 text-white/70" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <span className="text-[11px] font-medium tracking-[0.15em] uppercase leading-none mt-1.5 text-white/70" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   Architects | Interior Designers
                 </span>
               </div>
@@ -44,7 +44,7 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-6">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-3">
               {[
                 { label: "Home", path: "/" },
@@ -67,7 +67,7 @@ export const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-lg mb-6">Services</h4>
+            <h4 className="font-semibold text-lg mb-4">Services</h4>
             <ul className="space-y-3">
               {[
                 "Modular Kitchen",
@@ -92,7 +92,7 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-lg mb-6">Contact Us</h4>
+            <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
@@ -130,7 +130,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/10 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
             © {currentYear} THRIDHA Interior Solutions. All rights reserved.
           </p>

@@ -57,19 +57,19 @@ export const Navbar = ({ onOpenContact }: NavbarProps) => {
         <div className="container mx-auto px-4 lg:px-20">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <button onClick={() => navigate("/")} className="flex items-center gap-3">
-              <div className="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center overflow-hidden p-0.5">
+            <button onClick={() => navigate("/")} className="flex items-center gap-2 lg:gap-3 shrink-0">
+              <div className="w-9 h-9 lg:w-14 lg:h-14 rounded-lg bg-white/10 flex items-center justify-center overflow-hidden p-0.5">
                 <img
                   src="/logo.png"
                   alt="THRIDHA Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="flex flex-col text-left">
-                <span className={`font-bold text-xl leading-none transition-colors ${isTransparent ? "text-white" : "text-primary"}`} style={{ fontFamily: "'Cinzel', serif" }}>
+              <div className="flex flex-col text-left max-w-[180px] lg:max-w-none">
+                <span className={`font-bold text-[18px] lg:text-2xl leading-none transition-colors ${isTransparent ? "text-white" : "text-primary"}`} style={{ fontFamily: "'Cinzel', serif" }}>
                   THRIDHA
                 </span>
-                <span className={`text-[10px] font-medium tracking-[0.15em] uppercase leading-none mt-1.5 transition-colors ${isTransparent ? "text-white/70" : "text-primary/70"}`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <span className={`text-[8.5px] lg:text-[11px] font-medium tracking-[0.05em] lg:tracking-[0.15em] uppercase leading-none mt-1 lg:mt-1.5 transition-colors ${isTransparent ? "text-white/70" : "text-primary/70"}`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   Architects | Interior Designers
                 </span>
               </div>

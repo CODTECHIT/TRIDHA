@@ -28,22 +28,22 @@ export const FAQSection = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
-        <section id="faq" ref={sectionRef} className="py-20 lg:py-32 bg-background">
+        <section id="faq" ref={sectionRef} className="py-12 lg:py-20 bg-background">
             <div className="container mx-auto px-4 lg:px-20">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7 }}
-                    className="text-center max-w-3xl mx-auto mb-16"
+                    className="text-center max-w-3xl mx-auto mb-10"
                 >
-                    <div className="inline-flex items-center gap-2 bg-secondary/10 px-4 py-2 rounded-full mb-4">
+                    <div className="inline-flex items-center gap-2 bg-secondary/10 px-4 py-2 rounded-full mb-3">
                         <MessageCircleQuestion className="w-4 h-4 text-secondary" />
                         <span className="text-sm font-semibold text-secondary">Common Questions</span>
                     </div>
-                    <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                    <h2 className="text-3xl lg:text-4xl font-bold mb-3">
                         Interior Design FAQs
                     </h2>
-                    <p className="text-lg text-foreground-muted">
+                    <p className="text-base lg:text-lg text-foreground-muted">
                         Frequently asked questions about our services and process in Hyderabad.
                     </p>
                 </motion.div>

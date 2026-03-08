@@ -118,25 +118,25 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="properties" ref={sectionRef} className="py-20 lg:py-32 bg-muted">
+    <section id="properties" ref={sectionRef} className="py-12 lg:py-20 bg-muted">
       <div className="container mx-auto px-4 lg:px-20">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-3">
             Interior Design Projects in Hyderabad
           </h2>
-          <p className="text-lg text-foreground-muted">
+          <p className="text-base lg:text-lg text-foreground-muted">
             Explore our curated range of interior solutions from modular kitchens to luxury wardrobes in Hyderabad.
           </p>
         </motion.div>
 
         {/* Solutions Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {interiorSolutions.map((solution, index) => (
             <motion.div
               key={solution.title}
@@ -237,7 +237,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.7 }}
-          className="mt-20 pt-16 border-t border-border"
+          className="mt-12 lg:mt-20 pt-10 lg:pt-16 border-t border-border"
         >
           <div className="text-center mb-10">
             <span className="inline-block px-3 py-1 bg-gold/10 text-gold rounded-full text-sm font-semibold mb-4">

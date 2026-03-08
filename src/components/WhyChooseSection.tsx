@@ -84,7 +84,7 @@ export const WhyChooseSection = () => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="why-us" ref={sectionRef} className="py-20 lg:py-32 bg-background">
+    <section id="why-us" ref={sectionRef} className="py-12 lg:py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Features */}
@@ -94,10 +94,10 @@ export const WhyChooseSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7 }}
             >
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-primary">
                 Why Choose THRIDHA Interior Designers
               </h2>
-              <p className="text-lg text-foreground-muted mb-10">
+              <p className="text-base lg:text-lg text-foreground-muted mb-6">
                 THRIDHA provides premium residential and office interior design services in Hyderabad. We combine aesthetics with functionality to create spaces that inspire.
               </p>
             </motion.div>
@@ -135,7 +135,7 @@ export const WhyChooseSection = () => {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="bg-muted rounded-2xl p-8 lg:p-10"
             >
-              <h3 className="text-2xl font-bold mb-8 text-center">
+              <h3 className="text-2xl font-bold mb-6 text-center">
                 Our Achievement Map
               </h3>
               <div className="grid grid-cols-2 gap-6">

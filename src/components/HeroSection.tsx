@@ -21,7 +21,7 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col pt-20 overflow-hidden"
     >
       {/* Background Image */}
       <div
@@ -34,76 +34,65 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
       {/* Dark gradient overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/50" />
 
-      <div className="container mx-auto px-4 lg:px-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 lg:px-20 relative z-10 flex-grow flex items-start lg:items-center pt-32 pb-10 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center text-center lg:text-left w-full">
           {/* Content */}
-          <div className="text-white">
-            {/* Trust Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6"
-            >
-              <CheckCircle className="w-5 h-5 text-gold" />
-              <span className="text-sm font-medium">Over 10 Years of Designing Excellence</span>
-            </motion.div>
-
+          <div className="text-white flex flex-col items-center lg:items-start">
             {/* Headline */}
             <motion.h1
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white"
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 lg:mb-6 text-white"
             >
               Interior Designers in Hyderabad – <span className="text-gold">THRIDHA</span> Interior Solutions
             </motion.h1>
 
             {/* Subheadline */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mb-8"
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+              className="mb-8 w-full"
             >
-              <p className="text-xl md:text-2xl font-medium mb-4 text-white/90">
+              <p className="text-lg md:text-2xl font-medium mb-4 text-white/90">
                 Premium Interior Design & Turnkey Solutions for Homes and Offices.
               </p>
-              <div className="grid grid-cols-2 gap-4 mt-6">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-3 mt-6 text-left">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-gold" />
-                  <span className="text-sm font-medium">10+ Years Experience</span>
+                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-xs lg:text-sm font-medium">10+ Years Experience</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-gold" />
-                  <span className="text-sm font-medium">150+ Projects Completed</span>
+                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-xs lg:text-sm font-medium">150+ Projects Completed</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-gold" />
-                  <span className="text-sm font-medium">Hyderabad Based</span>
+                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-xs lg:text-sm font-medium">Hyderabad Based</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-gold" />
-                  <span className="text-sm font-medium">Turnkey Solutions</span>
+                  <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-gold" />
+                  <span className="text-xs lg:text-sm font-medium">Turnkey Solutions</span>
                 </div>
               </div>
             </motion.div>
 
             {/* Description */}
             <motion.p
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.6 }}
-              className="text-lg text-white/80 mb-8 max-w-xl"
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+              className="text-base lg:text-lg text-white/80 mb-8 max-w-xl"
             >
               THRIDHA Interior Solutions provides premium residential and office interior design services in Hyderabad. Experts in modular kitchens, wardrobes, false ceilings, and turnkey interior solutions.
             </motion.p>
 
             {/* CTAs */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.8 }}
+              transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button
@@ -129,9 +118,9 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
           {/* Floating Property Cards with Images */}
           <div className="relative hidden lg:block h-[500px]">
             <motion.div
-              initial={{ opacity: 0, x: 60 }}
+              initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
+              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
               className="absolute top-0 right-0 w-72"
             >
               <div className="float bg-white rounded-xl overflow-hidden shadow-xl" style={{ animationDelay: "0s" }}>
@@ -151,9 +140,9 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 60 }}
+              initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.8, ease: [0.34, 1.56, 0.64, 1] }}
+              transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
               className="absolute top-32 right-40 w-64"
             >
               <div className="float bg-white rounded-xl overflow-hidden shadow-xl" style={{ animationDelay: "1s" }}>
@@ -173,9 +162,9 @@ export const HeroSection = ({ onOpenContact }: HeroSectionProps) => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 60 }}
+              initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 1, ease: [0.34, 1.56, 0.64, 1] }}
+              transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               className="absolute bottom-10 right-16 w-60"
             >
               <div className="float bg-white rounded-xl overflow-hidden shadow-xl" style={{ animationDelay: "2s" }}>

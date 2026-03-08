@@ -50,25 +50,25 @@ export const ServicesSection = ({ onOpenContact }: ServicesSectionProps) => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" ref={sectionRef} className="py-20 lg:py-32 bg-background">
+    <section id="services" ref={sectionRef} className="py-12 lg:py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-20">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-3">
             Premium Interior Design Services in Hyderabad
           </h2>
-          <p className="text-lg text-foreground-muted">
+          <p className="text-base lg:text-lg text-foreground-muted text-balance">
             End-to-end interior solutions from concept to execution. We handle everything from residential to commercial spaces.
           </p>
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

@@ -13,7 +13,7 @@ export const CTASection = ({ onOpenContact }: CTASectionProps) => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section ref={sectionRef} className="py-20 lg:py-32 gradient-cta relative overflow-hidden">
+    <section ref={sectionRef} className="py-12 lg:py-20 gradient-cta relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-64 h-64 rounded-full border border-white/20" />
@@ -28,10 +28,10 @@ export const CTASection = ({ onOpenContact }: CTASectionProps) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Book a Free Interior Consultation
           </h2>
-          <p className="text-xl text-white/80 mb-10">
+          <p className="text-lg lg:text-xl text-white/80 mb-6">
             Let's talk about your dream interior project in Hyderabad and make it a reality.
           </p>
           <motion.div
