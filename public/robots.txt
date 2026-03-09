@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://THRIDHAinteriors.com/sitemap.xml
+Sitemap: https://www.thridha.co.in/sitemap.xml

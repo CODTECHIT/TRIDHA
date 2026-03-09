@@ -205,7 +205,7 @@ export const AboutSection = () => {
               "name": "THRIDHA Interior Solutions",
             },
             "description": "Founder of THRIDHA Interior Solutions with over a decade of expertise in residential and commercial interior design.",
-            "image": "https://THRIDHAinteriors.com/image/founder.jpeg",
+            "image": "https://www.thridha.co.in/image/founder.jpeg",
           }),
         }}
       />

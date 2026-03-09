@@ -2,7 +2,7 @@
 
 ## Project Info
 
-**URL**: [THRIDHA Interior Solutions](https://THRIDHAinteriors.com/)
+**URL**: [THRIDHA Interior Solutions](https://www.thridha.co.in/)
 
 ## Getting Started
 

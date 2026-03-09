@@ -14,7 +14,7 @@ export const SEO = ({
     description,
     keywords,
     canonical,
-    ogImage = "https://THRIDHAinteriors.com/logo.png",
+    ogImage = "https://www.thridha.co.in/logo.png",
     ogType = "website",
 }: SEOProps) => {
     const siteName = "THRIDHA Architects & Interior Designers";
