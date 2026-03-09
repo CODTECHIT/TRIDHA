@@ -101,6 +101,7 @@ export const AboutSection = () => {
                       src="/image/founder.jpeg"
                       alt="D. Manoj Kumar Varma"
                       className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -177,6 +178,7 @@ export const AboutSection = () => {
                       src="/logo.png"
                       alt="THRIDHA Logo"
                       className="h-12 w-auto object-contain"
+                      loading="lazy"
                     />
                   </div>
                   <div className="h-px w-20 bg-gold/50 mb-6" />
@@ -189,6 +191,24 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
+      {/* Structured Data for Founder & Organization (AEO/SEO) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "D. Manoj Kumar Varma",
+            "jobTitle": "Founder & Visionary",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "THRIDHA Interior Solutions",
+            },
+            "description": "Founder of THRIDHA Interior Solutions with over a decade of expertise in residential and commercial interior design.",
+            "image": "https://THRIDHAinteriors.com/image/founder.jpeg",
+          }),
+        }}
+      />
     </section>
   );
 };

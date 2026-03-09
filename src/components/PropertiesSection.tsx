@@ -163,6 +163,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
                           : `${solution.title} design in Hyderabad by THRIDHA Interior Solutions`
                   }
                   className="w-full h-full object-cover transition-transform duration-600 ease-out group-hover:scale-[1.08]"
+                  loading="lazy"
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
@@ -256,6 +257,7 @@ export const PropertiesSection = ({ onOpenContact }: PropertiesSectionProps) => 
               src={ceilingImage}
               alt="Living Room Setup"
               className="w-full h-auto object-contain max-h-[600px]"
+              loading="lazy"
             />
             <div className="absolute bottom-4 right-4">
               <Button variant="THRIDHA-secondary" size="sm" onClick={onOpenContact}>

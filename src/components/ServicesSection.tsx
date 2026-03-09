@@ -88,6 +88,7 @@ export const ServicesSection = ({ onOpenContact }: ServicesSectionProps) => {
                     src={service.image}
                     alt={`${service.title} in Hyderabad by THRIDHA Architects & Interior Designers`}
                     className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.12] group-hover:-translate-y-4"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
                 </div>

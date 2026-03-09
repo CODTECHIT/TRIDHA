@@ -105,6 +105,34 @@ export const TestimonialsSection = () => {
           ))}
         </div>
       </div>
+      {/* Structured Data for Testimonials (AEO/SEO) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "THRIDHA Architects & Interior Designers",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": testimonials.length.toString(),
+            },
+            "review": testimonials.map((t) => ({
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": t.author,
+              },
+              "reviewBody": t.quote,
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": t.rating.toString(),
+              },
+            })),
+          }),
+        }}
+      />
     </section>
   );
 };

@@ -12,6 +12,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContactModal } from "@/components/ContactModal";
 import { FloatingContactButton } from "@/components/FloatingContactButton";
+import { SEO } from "@/components/SEO";
 import heroInterior from "@/assets/hero-interior.png";
 
 const contactMethods = [
@@ -136,6 +137,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Contact Us | Interior Design Consultation Hyderabad"
+        description="Book a free interior design consultation with THRIDHA. Visit our studio in Gachibowli, Hyderabad or contact us for modular kitchen, wardrobe, and home interior quotes."
+        keywords="Contact Interior Designer Hyderabad, Interior Design Studio Gachibowli, Free Design Consultation, Interior Design Quote Hyderabad"
+      />
       <Navbar onOpenContact={() => setIsContactOpen(true)} />
 
       {/* Hero Section */}

@@ -11,6 +11,7 @@ import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { ContactModal } from "@/components/ContactModal";
 import { FloatingContactButton } from "@/components/FloatingContactButton";
+import { SEO } from "@/components/SEO";
 
 import { motion } from "framer-motion";
 
@@ -27,6 +28,11 @@ const Index = () => {
       transition={{ duration: 0.6 }}
       className="min-h-screen bg-background"
     >
+      <SEO
+        title="Best Interior Designers in Hyderabad | Modular Kitchen & Turnkey Interiors"
+        description="THRIDHA Architects & Interior Designers provide premium residential and office interior design services in Hyderabad. Experts in modular kitchens, wardrobes, and false ceilings. Book a free consultation."
+        keywords="Interior Designers Hyderabad, Modular Kitchen Hyderabad, Office Interiors Gachibowli, Residential Interior Design Hyderabad, Turnkey Interior Solutions"
+      />
       <Navbar onOpenContact={openContact} />
       <main>
         <HeroSection onOpenContact={openContact} />
